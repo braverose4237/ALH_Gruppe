@@ -39,6 +39,14 @@ public class StepDefinition {
         System.out.println("score = " + score);
         score = score.replace(',', '.');
         double doubleScore = Double.parseDouble(score);
+        String companyName = ConfigurationReader.getProperty("CompanyName");
+        if(doubleScore>= 3.5){
+
+            System.out.println(companyName+" ist ein Unternehmen, das von seinen Mitarbeitern geliebt wird. ");
+        }
+        else{
+            System.out.println(companyName+" ist ein Unternehmen, das von seinen Mitarbeitern nicht geliebt wird. ");
+        }
         Assert.assertTrue(doubleScore>=3.5);
         }
     }
