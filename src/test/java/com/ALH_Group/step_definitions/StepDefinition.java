@@ -28,7 +28,6 @@ public class StepDefinition {
         basePage.ALH_Gruppe_Auswahlen_Kununu.click();
         System.out.println("Page is opened");
 
-        // basePage.Arbeitgeber_Kununu.sendKeys(Driver.getDriver().get(ConfigurationReader.getProperty("CompanyName")));
     }
 
 
